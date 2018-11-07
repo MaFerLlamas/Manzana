@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Porciones</title>
+<link rel="stylesheet" href="agregarPorcionStyle.css"/>
+<link href="https://fonts.googleapis.com/css?family=
+		Cabin+Sketch:400,700|Knewave" rel="stylesheet">
+</head>
+<body>
+	<h1>Porciones</h1>
+	<div class="container">
+		<div id="content-add">
+			<form method="POST" action="" >
+				<p>
+					<label class="add-input" for="txtNombrePorcion">Nombre </label>
+					<input class="add-input" id="txtNombrePorcion" name="nombrePorcion" type="text"/>
+				</p>
+				<p>
+
+					<label class="add-input" for="cmbGrupoPorcion">Grupo </label>
+					<select class="add-input" id="cmbGrupoPorcion" name="grupoPorcion" required>
+						<option value="verduras">Verduras</option>
+						<option value="frutas">Frutas</option>
+						<option value="cereales">Cereales</option>
+						<option value="legumbres">Legumbres</option>
+						<option value="lacteos">Lácteos</option>
+						<option value="aceitesYGrasas">Aceites Y Grasas</option>
+						<option value="azucares">Azúcares</option>
+						<option value="origenAnimal">Origen Animal</option>
+						<option value="grasasConProteina">Grasas con Proteína</option>
+						<option value="azucaresConGrasa">Azúcares con Grasa</option>
+					</select>
+				</p>
+				<p>
+					<label for="rbFrecuenciaPorcion">Frecuencia con la que puede ser consumido</label>
+					<br/>
+					<label for="rbSiempre">Siempre</label>
+					<input id="rbSiempre" name="frecuenciaPorcion" type="radio"></input>
+					<label for="rbTresODos">Dos o Tres a la Semana</label>
+					<input id="rbTresODos" name="frecuenciaPorcion" type="radio"></input>
+					<label for="rbUna">Una vez</label>
+					<input id="rbUna" name="frecuenciaPorcion" type="radio"></input>
+				</p>
+				<p>
+					
+					<label for="txtCant">Cantidad</label>
+					<input id="txtCant" name="cantidad" type="text"/>
+					
+					<select id="cmbMedida" name="medida">
+						<option value="tzas">Tazas</option>
+						<option value="pzas">Piezas</option>
+						<option value="cdas">Cucharadas</option>
+						<option value="rebanada">Rebanadas</option>
+						<option value="cditas">Cucharaditas</option>
+						<option value="mitades">Mitades</option>
+						<option value="gramos">Gramos</option>
+					</select>
+				</p>
+			</form>
+		</div>
+		<div id="content-modify">
+			<table>
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Grupo</th>
+						<th>Cantidad</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
